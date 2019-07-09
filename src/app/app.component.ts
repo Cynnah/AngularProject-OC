@@ -8,10 +8,21 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isAuth = false;
 
-  appareilOne = 'Téléphone';
-  appareilTwo = 'Machine à pain';
-  appareilThree = 'Robot de cuisine';
-  
+  appareilsArray = [
+    {
+      name: 'Téléphone',
+      status: 'allumé'
+    },
+    {
+      name: 'Machine à pain',
+      status: 'éteint'
+    },
+    {
+      name: 'Robot de cuisine',
+      status: 'allumé'
+    }
+  ];
+
   constructor() {
     setTimeout(
       () => {
